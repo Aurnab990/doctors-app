@@ -1,11 +1,12 @@
 import React from 'react';
 import chair from '../../../assets/images/chair.png';
+import background from '../../../assets/images/bg.png';
 
 
 
 const Header = () => {
     return (
-        <div>
+        <div style={{'background': `url(${background})`, }}>
             <div class="hero min-h-screen px-12  ">
             <div class="hero-content flex-col gap-10 lg:flex-row-reverse">
                 <img src={chair} class="max-w-lg rounded-lg shadow-2xl" />
