@@ -6,7 +6,7 @@ import background from '../../../assets/images/bg.png';
 
 const Header = () => {
     return (
-        <div style={{'background': `url(${background})`, }}>
+        <div style={{'background': `url(${background})`, 'backgroundSize':'width: 200px'}}>
             <div class="hero min-h-screen px-12  ">
             <div class="hero-content flex-col gap-10 lg:flex-row-reverse">
                 <img src={chair} class="max-w-lg rounded-lg shadow-2xl" />

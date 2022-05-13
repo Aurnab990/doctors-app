@@ -1,4 +1,5 @@
 import React from 'react';
+import Appoinment from './Appoinment/Appoinment';
 import Card from './Card/Card';
 import ExtraSec from './ExtraSec/ExtraSec';
 import Header from './Header/Header';
@@ -11,6 +12,7 @@ const Home = () => {
             <Card></Card>
             <Services></Services>
             <ExtraSec></ExtraSec>
+            <Appoinment></Appoinment>
         </div>
     );
 };
