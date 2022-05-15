@@ -6,7 +6,7 @@ const Appoinment = () => {
     return (
         <div style={{'background':`url(${appoinment})`}} className='lg:flex lg:px-24 mt-32 '>
             <div className='invisible lg:visible'>
-                <img  style={{'width':'2000px', 'height':'520px', 'marginTop':'-130px'}} src={doctor} alt="" />
+                <img  style={{'width':'2050px', 'height':'520px', 'marginTop':'-130px'}} src={doctor} alt="" />
 
             </div>
             <div className='mt-2 lg:mt-24'>
