@@ -13,6 +13,7 @@ const Home = () => {
             <Services></Services>
             <ExtraSec></ExtraSec>
             <Appoinment></Appoinment>
+            
         </div>
     );
 };

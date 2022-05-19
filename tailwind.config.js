@@ -15,7 +15,15 @@ module.exports = {
         
           neutral: "#3A4256",
           "base-100": "#ffffff",
+          
         },
+        fontFamily: {
+          'sans': ['ui-sans-serif', 'system-ui'],
+          'serif': ['ui-serif', 'Georgia'],
+          'mono': ['ui-monospace', 'SFMono-Regular'],
+          'display': ['Oswald'],
+          'body': ["Open Sans"],
+        }
       },
       "dark",
       "cupcake",
