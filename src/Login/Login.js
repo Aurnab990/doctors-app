@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -18,8 +19,9 @@ const Login = () => {
                                 <span class="label-text">Password</span>
                             </label>
                             <input type="password" placeholder="password" class="input input-bordered" />
-                            <label class="label">
-                                <a href="/" class="label-text-alt link link-hover">Forgot password?</a>
+                            <label class="label lg:flex gap-5">
+                                <a href="/" class="label-text-alt link link-hover hover:red-600">Forgot password?</a>
+                                <Link to='/signin' class="label-text-alt link link-hover  hover:text-red-800">Create an account</Link>
                             </label>
                         </div>
                         <div class="form-control mt-6">
