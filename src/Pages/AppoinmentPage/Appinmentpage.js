@@ -5,11 +5,13 @@ import { format } from 'date-fns';
 import 'react-day-picker/dist/style.css';
 import AppoinmentServices from '../../AppoinmentServices/AppoinmentServices';
 import AppoinServices from '../../AppoinmentServices/AppoinServices';
+import Booking from '../../Booking/Booking';
 
 
 
 const Appinmentpage = () => {
     const [selected, setSelected] = React.useState(new Date());
+   
 
 
     return (
@@ -23,6 +25,7 @@ const Appinmentpage = () => {
                         selected={selected}
                         onSelect={setSelected}
                         
+                        
                     />
                 </div>
                 
@@ -31,7 +34,8 @@ const Appinmentpage = () => {
             
         </div>
         <p className='text-lg text-primary text-center font-Opens Sans'>Avaiable Appoinments on {format(selected, 'PP')}</p>
-        <AppoinmentServices></AppoinmentServices>
+        <AppoinmentServices selected={selected}></AppoinmentServices>
+        
         </div>
     )
 

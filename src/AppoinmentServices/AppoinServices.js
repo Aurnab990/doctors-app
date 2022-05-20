@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AppoinServices = ({item}) => {
+const AppoinServices = ({item, setServices}) => {
     
     const { name, slots } = item;
     
@@ -12,7 +12,8 @@ const AppoinServices = ({item}) => {
                <p className='text-center text-sm'>{slots.length} {slots.length>1?'SPACES':'SPACE'} AVAILABLE</p>
                <p className='text-center text-sm'>{slots[0]}</p>
                 <div class="card-actions justify-end">
-                    <button disabled={slots.length===0} class="w-full btn btn-primary font-body text-white bg-gradient-to-r from-primary to-secondary font-bold">BOOK APPOINMENT</button>
+                <label onClick={()=>setServices(item)} for="my-modal" disabled={slots.length===0}  class="btn modal-button btn-primary font-body text-white bg-gradient-to-r from-primary to-secondary font-bold">BOOK APPOINMENT</label>
+                    
                 </div>
             </div>
         </div>
